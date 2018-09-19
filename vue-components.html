@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue: 组件基础</title>
+    <script src="scripts/vue.js"></script>
+</head>
+
+<body>
+    <!-- <div id="components-demo">
+        <button-counter></button-counter>
+    </div> -->
+
+    <!-- <div id="example-1">
+        <blog-post title="My journey with Vue"></blog-post>
+        <blog-post title="Blogging with Vue"></blog-post>
+        <blog-post title="Why Vue is so fun"></blog-post>
+    </div>
+
+    <div id="blog-post-demo">
+        <blog-post
+          v-for="post in posts"
+          v-bind:key="post.id"
+          v-bind:title="post.title"
+        >
+        </blog-post>
+    </div> -->
+
+    <!-- <div id="blog-post-demo2">
+        <blog-post v-for="post in posts" :key="post.id" :post="post">
+        </blog-post>
+    </div> -->
+
+    <!-- <div id="blog-posts-events-demo">
+        <div :style="{ fontSize: postFontSize + 'em'}">
+            <blog-post 
+               v-for="post in posts"
+               :key="post.id"
+               v-on:enlarge-text= "postFontSize += $event"
+               :post="post"
+               ></blog-post>
+
+        </div>
+    </div> -->
+
+
+    <!-- 当这个事件处理函数是一个方法 -->
+    <!-- <div id="blog-posts-events-demo">
+        <div :style="{ fontSize: postFontSize + 'em'}">
+            <blog-post 
+               v-for="post in posts"
+               :key="post.id"
+               v-on:enlarge-text= "onEnlargeText"
+               :post="post"
+               ></blog-post>
+
+        </div>
+    </div> -->
+
+
+    <!-- 在组件上使用 v-model -->
+    <!-- <div id="demo">
+        <custom-input v-model="searchText"></custom-input>
+    </div> -->
+
+
+    <!-- 通过插槽分发内容 -->
+    <div id="slot-demo">
+        <alert-box>
+            Something bad happened
+        </alert-box>
+    </div>
+
+
+
+    <script src="scripts/components.js"></script>
+</body>
+
+</html>

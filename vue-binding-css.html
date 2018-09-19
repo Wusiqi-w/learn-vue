@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue: Class与Style绑定</title>
+    <script src="scripts/vue.js"></script>
+</head>
+
+<body>
+    <!-- 下面的语法表示 activa这个class存在与否将取决于数据属性 isActive 的 truthiness -->
+
+    <!-- v-bind:class 指令也可以于普通的class属性共存 -->
+    <!-- <div class="static" v-bind:class="{ active: isActive, 'text-danger': hasError}"></div> -->
+
+    <!-- 绑定一个返回对象的计算属性 -->
+    <!-- <div v-bind:class="classObject"></div> -->
+
+
+    <!-- 把一个数组传给v-bind:class -->
+    <!-- <div v-bind:class = "[activeClass, errorClass]"></div> -->
+
+    <!-- 对象语法 -->
+
+    <!-- <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px'}"></div> -->
+
+    <!-- 直接绑定到一个样式对象 -->
+
+    <div v-bind:style="styleObject"></div>
+
+    <script src="scripts/binding-css.js"></script>
+</body>
+
+</html>
